@@ -1,0 +1,17 @@
+{
+    "name": "x3wil/machine-learning",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Patrik Chotěnovský",
+            "email": "chotenovsky.patrik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"x3wil\\MachineLearning\\": "src/"}
+    },    
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    }
+}
