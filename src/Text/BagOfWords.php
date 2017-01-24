@@ -101,6 +101,7 @@ class BagOfWords implements \Serializable
         $probabilities = [];
 
         foreach ($this->tokens as $class => $data) {
+            $class = (string) $class;
             $probability = $this->calculatePriorProbability($class);
 
             foreach ($tokens as $token) {
