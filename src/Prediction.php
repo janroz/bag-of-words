@@ -28,6 +28,10 @@ class Prediction
         $max = max($this->getProbabilities());
         $min = min($this->getProbabilities());
 
+        if ($min === $max) {
+            return [];
+        }
+
         $normalized = [];
         foreach ($this->getProbabilities() as $key => $probability) {
             $normalized[$key] = (((100 - 1) * ($probability - $min)) / ($max - $min)) + 1;
